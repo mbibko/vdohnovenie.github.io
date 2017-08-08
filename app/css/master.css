@@ -1,0 +1,51 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project: ProNewspaper
+Version:  1.0
+Assigned to:  WebNik
+Primary use: ProNewspaper
+-------------------------------------------------------------------*/
+
+
+/* FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
+@import '../fonts/stroke/style.css';
+@import '../fonts/elegant/style.css';
+@import 'https://cdn.bootcss.com/pixeden-stroke-7-icon/1.2.3/dist/pe-icon-7-stroke.min.css';
+/*@import '../fonts/flaticon/font/flaticon.css';*/
+
+
+
+/* PLUGIN CSS */
+
+@import '../libs/bootstrap/bootstrap.css';                /* bootstrap */
+/*@import '../plugins/bootstrap-select/css/bootstrap-select.css';   /* select customization */
+@import '../plugins/headers/header.css';                /* header */
+@import '../plugins/headers/yamm.css';                /* header */
+@import '../plugins/slider-pro/slider-pro.css';         /* main slider */
+@import '../plugins/owl-carousel/owl.theme.css';                 /* other sliders */
+@import '../plugins/magnific-popup/magnific-popup.css';            /* modal */
+@import '../plugins/animate/animate.css';                        /* animations */
+@import url('../plugins/news-ticker/css/endlessRiver.css');          /* ticker */
+/*@import '../plugins/parallax/parallax.css';                        /* parallax */
+@import '../plugins/flowplayer/skin/playful.css';          /* video-player */
+
+
+
+/* MAIN CSS */
+
+@import 'theme.css';
+@import 'theme-dark.css';
+@import 'color.css';
+@import 'responsive.css';
+
+
+.section-sidebar {
+    margin-top: 30px;
+}
+.footer__main {
+    padding-top: 0;
+    padding-bottom: 30px;
+}

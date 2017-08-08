@@ -1,0 +1,58 @@
+{% block vars %}
+{% endblock %}
+
+{% block head %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Школа интегрального развития человека ВДОХНОВЕНИЕ / Главная</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="">
+{% endblock %}
+{% block header %}
+<header class="header header-boxed-width header-logo-black header-navbar-white header-navibox-2-center header-navibox-3-right header-navibox-4-right header-topbarbox-1-left header-topbarbox-2-right">
+    <div class="container container-boxed-width">
+        <div class="container">
+            <div class="header-navibox-4">
+                <ul class="social-links list-inline">
+                    <li><a target="_blank" href="https://vk.com/shkola_vdohnovenie"><i class="fa fa-vk"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/groups/1517218345252710/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <!-- <li><a class="btn_header_search" href="#"><i class="fa fa-search"></i></a></li> -->
+                </ul>
+            </div>
+            <div class="header-navibox-1">
+                <!-- Mobile Trigger Start-->
+                <button class="menu-mobile-button visible-xs-block js-toggle-screen toggle-menu-button"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
+                <!-- Mobile Trigger End-->
+                <a class="navbar-brand scroll" href="index.html">
+                    <span href="#" class="logo-img" style="">
+                        <img width="300" src="images/logo.png" alt="">
+                    </span>
+                    <div class="logo-text">Школа интегрального развития человека <br> ВДОХНОВЕНИЕ</div>
+                </a>
+            </div>
+        </div>
+        <nav class="navbar" id="nav">
+            <div class="container">
+                <div class="header-navibox-2">
+                    {% import "blocks/main-menu.html" as macro %}
+                    {{ macro.mainMenu(currentPage) }}
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+{% endblock %}

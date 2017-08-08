@@ -1,0 +1,31 @@
+// mixins
+
+// do not work in iphone 4? (yeah, when it set to pseudo selectors )
+// do not work if set for images
+@mixin middle {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+// example: @include placeholder {color: #b2b1b1; font-style: italic; }
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        opacity: 1;
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}

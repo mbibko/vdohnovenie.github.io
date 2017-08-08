@@ -1,0 +1,26 @@
+{% include 'blocks/header.html' %}
+
+<div class="section-type-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <section class="section-area">
+                    <article class="b-post b-post_main clearfix">
+                        <div class="entry-main">
+                            <div class="entry-header">
+                                <h1 class="entry-title">{% block title %} {% endblock %}</h1>
+                            </div>
+                            <div class="entry-content">
+                                {% block content %} {% endblock %}
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'blocks/footer.html' %}

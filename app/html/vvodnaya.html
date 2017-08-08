@@ -1,0 +1,30 @@
+{% set currentPage = 'vvodnaya' %}
+
+{% extends "catalog.html" %}
+
+{% block content %}
+<div class="section-type-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <section class="section-area">
+                    {% for post in vvodnayaPosts %}
+                    <article class="b-post b-post_main clearfix">
+                        <div class="entry-main">
+                            <div class="entry-header">
+                                <h2 class="entry-title"><a href="{{post.url}}.html">{{post.title}}</a></h2>
+                            </div>
+                            <div class="entry-content">{{post.excerpt}}</div>
+                            <div class="entry-footer"><a class="btn-bd-primary" href="{{post.url}}.html">Читать далее</a>
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </section>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
